@@ -1,0 +1,437 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-font: #3563E9;
+    --primary-color: #264BC8;
+    --white: #ffffff;
+    --btn-color: #3366ea;
+    --btn-color-ligh: #3563e9;
+    --btn-color2: #54a6ff;
+    --secondary-light: #596780;
+    --bg-color:#f6f7f9;
+    --bg-2:#5eabff;
+    --bg-3:#416cea;
+    --secondary-lighter: #90A3BF;
+    --secondary-dark: #1A202C;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* Navgation Bar */
+nav{
+    margin: 20px 20px;
+    border-bottom: 1px solid var(--brownish-color);
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+}
+nav ul li{
+    display: inline-block;
+}
+nav ul li a{
+    text-decoration: none;
+    opacity: 1;
+    color: var(--black-color);
+    font-weight: 600;
+    font-size: 18px;
+}
+nav ul li a:active{
+    color: var(--brownish-color);
+}
+.logo{
+    font-size: 30px;
+    font-weight:600;
+    letter-spacing: 2px;
+    color: var(--primary-color);
+}
+nav ul li a:hover{
+    opacity: 0.8;
+}
+.signin{
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 20px;
+}
+.links{
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 30px;
+}
+.links li a{
+    padding-inline: 0px;
+}
+
+
+
+
+/* Style Rule for the Search Bar */
+.search{
+    width: max-content;
+    display: flex;
+    align-items: center;
+    padding: 14px;
+    margin-right: 5px ;
+    border-radius: 28px;
+    background: #f6f6f6;
+    transition: box-shadow 0.25s;
+    width: 400px;
+}
+.search:focus-within{
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.75);
+}
+.search-input{
+    font-size: 16px;
+    font-family:'Lexend', sans-serif ;
+    color: #333;
+    margin-left: 14px;
+    outline: none;
+    border: none;
+    background: transparent;
+    width: 300px;
+    flex: 1;
+}
+.search-input:placeholder,
+.search-icon{
+    color: rgba(0, 0, 0, 0.25)
+}
+
+
+
+
+/* First Section Card rent a car& packages */
+
+.preview-section >div{
+    width: 640px;
+    height: 360px;
+}
+.preview-section{
+    display: flex;
+    justify-content: space-around;
+    background: var(--bg-color);
+    width: 98%;
+    padding-top: 25px;
+}
+
+.rent-car{
+    background: var(--bg-2);
+    color: #fff;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    background-image: url(../images/blueGT.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: calc(250px) 10px;
+
+}
+.packages{
+    background: var(--bg-3);
+    color: #fff;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    background-image: url(../images/hammer.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: calc(250px) 10px;
+}
+.rent-car-content,
+.packages-content{
+    padding-left: 20px;
+}
+.slogan{
+    font-size: 36px;
+    font-weight: 500;
+    padding: 20px 0;
+}
+.rent-car p{
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+.packages p{
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+
+
+
+
+
+
+.btn-rent-car{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 44px;
+    border-radius: 5px;
+    background-color: var(--btn-color);
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.btn-package{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 44px;
+    border-radius: 5px;
+    background-color: var(--btn-color2);
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+
+
+/* PickUp and DropOff */
+.booking{
+    display: flex;
+    justify-content: space-around;
+    background: var(--bg-color);
+    width: 98%;
+    padding-top: 25px;
+    padding-bottom: 60px;
+}
+.form-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-inline: 120px;
+}
+.pickup{
+    background: var(--white);
+    border-radius: 10px;
+    width: 582px;
+    height: 152px;
+}
+.pickup h3{
+    margin-left: 60px;
+    padding-top: 20px;
+}
+.sub-pickup{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-inline: 50px;
+}
+.sub-pickup h4{
+    padding: 10px;
+}
+.sub-pickup select{
+    width: 100px;
+    border-radius: 10px;
+    padding: 5px;
+}
+.sub-pickup input{
+    width: 150px;
+    border-radius: 10px;
+    padding: 5px;
+}
+.fa-pickup{
+    color: var(--btn-color);
+}
+.fa-dropoff{
+    color: var(--btn-color2);
+}
+
+.booking-search{
+    width: 70px;
+    height: 70px;
+    background: var(--btn-color-ligh);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+.d-arrow{
+    color: var(--white);
+    font-size: 24px;
+}
+
+
+/* Popular Car Section */
+.popular-section{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    background: var(--bg-color);
+    width: 98%;
+    padding-top: 25px;
+    padding-bottom: 60px;
+    margin-inline: 40px;
+}
+.popular-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+}
+.top-link{
+    display: flex;
+    justify-content: space-between;
+    height: 44px;
+    background: #f2f2f2;
+}
+.dezire{
+    background: var(--white);
+    width: 304px;
+    height: 388px;
+    border-radius: 10px;
+    background-image: url(../images/dezire.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.dezire p{
+    color: var(--secondary-lighter);
+    font-weight: 500;
+}
+.dezire-wrapper{
+    padding: 25px 20px;
+}
+.car-detail{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 200px;
+}
+.car-price{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.car-price span{
+    color: var(--secondary-dark);
+    font-weight: 600;
+    font-size: 20px;
+}
+.vitz{
+    background-image: url(../images/vitz.png);
+}
+.vitz-2000{
+    background-image: url(../images/blackVitz.png);
+    background-size: contain;
+}
+.revo{
+    background-image: url(../images/red-revo.png);
+}
+
+/* recommended cars */
+.two{
+    margin-top: 20px;
+}
+.rush{
+    background-image: url(../images/grayRava4.png);
+}
+.burgendey{
+    background-image: url(../images/burgdendyrava.png);
+}
+.cr-v{
+    background-image: url(../images/grayRava4.png);
+}
+
+/* show more button */
+.btn-showmore{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 44px;
+    border-radius: 5px;
+    background-color: var(--btn-color2);
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+/* Footer CSS */
+footer{
+    width: 100%
+}
+
+footer h3{
+    margin-bottom: 20px;
+    color: var(--secondary-dark);
+
+}
+footer ul li{
+    list-style: none;
+    padding: 10px 0;
+}
+footer a{
+    text-decoration: none;
+    opacity: 0.8;
+}
+footer a:hover{
+    opacity: 1;
+}
+
+.footer-links{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 60px;
+    margin-right: 70px;
+    margin-top: 20px;
+    padding: 30px;
+    border-bottom: 2px solid #f1f1f1
+}
+.footer-links ul li a{
+    color: var(--secondary-light);
+}
+.socials{
+    padding-right: 100px;
+}
+.footer-links > div{
+    margin-left: 10px;
+    display: inline-block
+}
+
+
+footer .copy{
+    display: flex;
+    justify-content: space-between;
+    margin-inline: 50px;
+    padding-inline: 40px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    color: var(--secondary-dark);
+}
+
+.privacy{
+    display: flex;
+    justify-content: space-between;
+    width: 350px;
+}
+.privacy >div{
+    margin-left: 10px;
+}
+
+.copy .privacy a{
+    color: var(--secondary-dark);
+}
