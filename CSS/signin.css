@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-font: #3563E9;
+    --primary-color: #264BC8;
+    --white: #ffffff;
+    --btn-color: #3366ea;
+    --btn-color-ligh: #3563e9;
+    --btn-color2: #54a6ff;
+    --secondary-light: #596780;
+    --bg-color:#f6f7f9;
+    --bg-2:#5eabff;
+    --bg-3:#416cea;
+    --secondary-lighter: #90A3BF;
+    --secondary-dark: #1A202C;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+/* First Section Card rent a car& packages */
+
+.preview-section >div{
+    width: 750px;
+    height: 360px;
+}
+.preview-section{
+    display: flex;
+    justify-content: space-around;
+    background: var(--bg-color);
+    width: 98%;
+    padding-top: 100px;
+    height: 600px;
+}
+
+.rent-car{
+    background: var(--bg-2);
+    color: #fff;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    background-image: url(../images/blueGT.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: calc(250px) 10px;
+
+}
+.packages{
+    background: var(--bg-3);
+    color: #fff;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    background-image: url(../images/hammer.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: calc(250px) 10px;
+    display: none;
+}
+.rent-car-content,
+.packages-content{
+    padding-left: 20px;
+}
+.slogan{
+    font-size: 36px;
+    font-weight: 500;
+    padding: 20px 0;
+}
+.rent-car p{
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+.packages p{
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+
+
+
+
+
+
+.btn-rent-car{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 44px;
+    border-radius: 5px;
+    background-color: var(--btn-color);
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.btn-package{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 44px;
+    border-radius: 5px;
+    background-color: var(--btn-color);
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+/* Sign-in Form */
+.signin-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.signin-card h2{
+    text-align: center;
+    padding-bottom: 70px;
+    letter-spacing: 2px;;
+    color: var(--primary-font);
+}
+.signin-card p{
+    color: var(--secondary-dark);
+    font-size: 16px;
+    text-align: center;
+}
+.signin-card form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.signin-card form input{
+    border: none;
+    padding: 10px;
+    border-bottom: 1px solid var(--secondary-lighter);
+    background: var(--bg-color);
+    width: 500px;
+    align-self: center;
+    margin-bottom: 10px;
+}
+.signin-card form input::placeholder{
+    font-size: 16px;
+    letter-spacing: 2px;
+    line-height: ;
+}
+.signin-card button{
+    align-self: center;
+    margin:15px 0;
+}
+.rent-car button a{
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 1px;
+
+}
+.signin-card a{
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--primary-font);
+    letter-spacing: 1px;
+}
+.signin-card a:hover{
+    color: var(--secondary-light);
+}

@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-font: #3563E9;
+    --primary-color: #264BC8;
+    --white: #ffffff;
+    --btn-color: #3366ea;
+    --btn-color-ligh: #3563e9;
+    --btn-color2: #54a6ff;
+    --secondary-light: #596780;
+    --bg-color:#f6f7f9;
+    --bg-2:#5eabff;
+    --bg-3:#416cea;
+    --secondary-lighter: #90A3BF;
+    --secondary-dark: #1A202C;
+}
+
+.right-col{
+    background: var(--bg-color);
+}
